@@ -1,8 +1,8 @@
-int	ft_strlen(char *str);
+int	ft_strlen(char *str)
 {
 	int	i;
 
-	while (str[i])
-		i++;
+	i = -1;
+	while (str[++i])
 	return (i);
 }

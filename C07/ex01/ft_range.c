@@ -20,18 +20,11 @@ int     *ft_range(int min, int max)
 
     min_cpy = min - 1;
     range = malloc(shitty_lencal(min, max) * sizeof(int));
-    printf("len is : %d\n", shitty_lencal(min, max));
     i = -1;
     if (min >= max)
         return NULL;
     while(++i != shitty_lencal(min, max))
-    {
         range[i] = ++min_cpy;
-        if(i != shitty_lencal(min, max) - 1)
-            printf("%d,", range[i]);
-        else
-            printf("%d.", range[i]);
-    }
     return(range);
 }
 
